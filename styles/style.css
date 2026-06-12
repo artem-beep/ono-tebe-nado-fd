@@ -73,7 +73,7 @@
     background-size: cover;
     background-position: center;
     color: #fff;
-    min-height: 757px;
+    height: 757px;
     z-index: 1;
 }
 
@@ -95,8 +95,8 @@
     line-height: 1.15;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    margin-bottom: 135px;
     z-index: 2;
+    margin-bottom: 108px;
 }
 
 .aligned_text_left,
@@ -116,6 +116,7 @@
 
 .aligned_text_right {
     text-align: right;
+    margin-right: -30px;
 }
 
 .cover_description {
@@ -124,6 +125,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    padding-bottom: 50px;
 }
 
 .cover_description_text {
@@ -145,7 +147,7 @@
 }
 
 .lots {
-   padding: 180px 0 0;
+    padding: 180px 24px 0;
 }
 
 .lots_header {
@@ -162,12 +164,12 @@
   gap: 25px;
   margin-bottom: 30px;
   list-style: none;  
-  padding-left: 40px;  
+  width: 1052px;
 }
 
 .lots_card_list_item {
   width: 334px;
-  min-height: 563px;
+  height: 596px;
   list-style: none;  
 }
 
@@ -232,15 +234,23 @@
 
 .about {
     display: grid;
-    grid-template-columns: 334px 1fr;
-    gap: 25px;
-    padding: 180px 0 0; 
+    grid-template-columns: 311px 693px;
+    gap: 72px;
+    padding: 120px 0 0;
+}
+
+.about_column:first-child {
+    align-items: flex-start;    
+    padding-top: 35px;         
+    padding-left: 71px;   
+         
 }
 
 .about_column:last-child {
-  padding-top: 133px;  
+    padding-top: 133px;        
+    align-items: flex-start;   
+    width: 693px; 
 }
-
 
 .about_column {
     display: flex;
@@ -251,12 +261,14 @@
 
 .about_logo {
     display: flex;
+    
     justify-content: center;
     align-items: center;
     width: 240px;
     height: 240px;
     background-color: #000;
     border-radius: 50%;
+    margin-left: 0; 
 }
 
 .about_logo_image {
